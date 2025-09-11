@@ -2,9 +2,21 @@
 
 
 {% block content %}
+    <br>
+    <div class="text-center">
+        <h3>Django demo App</h3>
+        <br>
+        <h3>you are logged in as {{user}}</h3>
+        <h5>A CRUD Application</h5>
+        <hr>
+        <br>
+        <a href="{% url 'login' %}" class="btn btn-primary">login</a>
+        <br>
+        <a href="{% url 'register' %}" class="btn btn-primary">Register &nbsp; <i class="fa fa-user-plus" aria-hidden="true"></i></a>
+        <br>
+        <a href="{% url 'logout' %}" class="btn btn-primary">Log out</a>
+        <br>
 
-<h1>hello world</h1>
-<a href="{% url 'login' %}">login</a>
-
+    </div>
 {% endblock %}
 
